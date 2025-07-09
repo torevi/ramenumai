@@ -3,87 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>私の最初のWebサイト</title>
+    <title>アリスのニンニク戦記</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Arial Black", "Impact", sans-serif;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f0f0f0;
+            background-color: #111;
         }
         .container {
-            background-color: white;
+            background-color: #fdd000;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 0;
+            border: 5px solid #000;
+        }
+        h1, h2, h3 {
+            color: #000;
+            text-align: center;
+            margin-bottom: 20px;
         }
         h1 {
-            color: #333;
-            text-align: center;
+            font-size: 2.5em;
+            background-color: #000;
+            color: #fdd000;
+            padding: 10px;
         }
         .profile {
             text-align: center;
-            margin: 20px 0;
+            margin: 30px 0;
+            font-size: 1.1em;
+        }
+        .profile strong {
+            color: #000;
+            font-size: 1.3em;
         }
         .hobby-list {
-            background-color: #f8f8f8;
+            background-color: #fff;
+            border: 3px solid #000;
             padding: 20px;
-            border-radius: 5px;
+            margin-bottom: 25px;
+        }
+        .hobby-list ul {
+            padding-left: 20px;
         }
         .hobby-list li {
-            margin: 10px 0;
+            margin: 12px 0;
+            list-style: "■ ";
+            font-weight: bold;
         }
         .github-link {
             text-align: center;
             margin-top: 30px;
         }
         a {
-            color: #0366d6;
-            text-decoration: none;
+            color: #ff0000;
+            text-decoration: underline;
+            font-weight: bold;
         }
         a:hover {
-            text-decoration: underline;
+            color: #000;
+            background-color: #ff0000;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>ようこそ！私のWebサイトへ 🎉</h1>
+        <h1>今日のニンニク報告 🧄</h1>
         
         <div class="profile">
             <h2>自己紹介</h2>
-            <p>こんにちは！私は<strong>[あなたの名前]</strong>です。</p>
-            <p>GitHubで初めてWebサイトを作りました！</p>
+            <p>ヤサイマシマシアブラカラメ！ 生粋のジロリアン、<strong>アリス</strong>だ。</p>
+            <p>日々の戦いの記録（ロット）をここに刻むッ！</p>
         </div>
 
         <div class="hobby-list">
-            <h3>好きなこと・趣味</h3>
+            <h3>日々の修行（ルーティン）</h3>
             <ul>
-                <li>🎮 ゲーム（特に[好きなゲーム名]）</li>
-                <li>📚 読書（[好きなジャンル]が好き）</li>
-                <li>🎵 音楽を聴くこと</li>
-                <li>💻 プログラミング（今日から！）</li>
+                <li>週5のニンニク補給</li>
+                <li>着丼から天地返しまでのタイムアタック</li>
+                <li>ロットを乱さないための入念な事前調査</li>
+                <li>俺的 "神豚" の発掘</li>
             </ul>
         </div>
 
         <div class="hobby-list">
-            <h3>これから挑戦したいこと</h3>
+            <h3>野望</h3>
             <ul>
-                <li>かっこいいWebサイトを作る</li>
-                <li>ゲームを作ってみる</li>
-                <li>アプリ開発</li>
+                <li>最強コールシミュレーター開発</li>
+                <li>全店舗制覇マップの作成</li>
+                <li>究極の乳化スープ再現</li>
             </ul>
         </div>
 
         <div class="github-link">
-            <p>GitHubで作成: <a href="https://github.com/[あなたのユーザー名]">[あなたのユーザー名]</a></p>
+            <p>GitHubで作成: <a href="https://github.com/jirolian-alice">jirolian-alice</a></p>
             <p>作成日: <span id="date"></span></p>
         </div>
     </div>
 
     <script>
-        // 今日の日付を表示
         document.getElementById('date').textContent = new Date().toLocaleDateString('ja-JP');
     </script>
 </body>
